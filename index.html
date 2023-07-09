@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>tempreture converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="outerbox">
+        <nav>home</nav>
+       
+        <p class="text">tempreture in celsius:</p>
+        <input class="input" type="text" name="" id="" value="">
+        <div class="button"><button type="button"  onclick="isvalue()">convert</button></div>
+       <div class="kelvin">the value in Kelvin:  
+        <span id="demo"> </span> 
+       <div>the value in farenieht:  <span id="demo1"></span></div> 
+    </div>
+   
+    </div>
+   
+    <script>
+             function isvalue()
+             {var celsius = document.getElementsByClassName("input");
+                   document.getElementById("demo").innerHTML= parseInt(celsius[0].value)+273.15;
+                   document.getElementById("demo1").innerText=(parseFloat(celsius[0].value)*9/5)+32;
+                   
+             }
+
+        </script>
+</body>
+</html>
